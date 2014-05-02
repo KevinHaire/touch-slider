@@ -1,0 +1,63 @@
+@import 'normalize';
+@import 'bits';
+
+/***********
+GLOBAL
+***********/
+
+#slider1 {
+	//HEIGHT OF SLIDER
+	height:300px;
+	border:1px solid black;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
+}
+
+.slideContainer {
+	transition:all .4s ease;
+	.slide {
+		//LINE HEIGHT MUST BE THE SAME AS #SLIDER1 HEIGHT
+		line-height:300px;
+		width:100%;
+		height:100%;
+		float:left;
+		text-align:center;
+		position:relative;
+		span {
+			position:absolute;
+			bottom:5%;
+			left:0;
+			right:0;
+			margin:auto;
+			line-height:0;
+			text-align:center;
+		}
+		img {
+			max-width:100%;
+			max-height:100%;
+			vertical-align:middle;
+		}
+	}
+}
+
+
+
+
+
+
+//BUTTONS
+.left {
+	float:left;
+	margin-top:15px;
+}
+
+.right {
+	float:right;
+	margin-top:15px;
+}
